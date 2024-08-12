@@ -158,3 +158,21 @@
     background-size: cover;
     color: black;
   }
+
+  .register{
+    right: 50px;
+    position: fixed;
+    font-family: American Typewriter, serif;
+    font-size: 20px;
+    padding: 10px;
+    /* margin-right: 30px; */
+    border-radius: 90px;
+    background-color: rgb(159, 12, 31);
+    color: white;
+    border-style: none;
+    
+  }
+
+  .register:hover{
+    transform: scale(1.1);
+  }

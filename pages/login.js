@@ -2,10 +2,13 @@ import "./styles/loginRegister.css";
 import Link from "next/link";
 import { useState } from "react";
 import axios from "../utils/axios";
+import { useRouter } from "next/router";
+
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,6 +18,7 @@ export default function Login() {
         password,
       });
       alert(response.data.message);
+      router.push("/chatbox")
     } catch (error) {
       console.error("Error:", error);
       alert("Error logging in");
@@ -24,7 +28,7 @@ export default function Login() {
   return (
     <div>
       <div className="header">
-        <Link href="homepage"><h1 className="logo">Boba Broskis</h1></Link>
+        <Link href="/"><h1 className="logo">Boba Broskis</h1></Link>
       </div>
       <div className="wrapper">
       <div className="container">
