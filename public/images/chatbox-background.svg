@@ -1,0 +1,33 @@
+<svg width="100%" height="100%" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#B17D6C" /> <!-- Brown/pink background -->
+
+  <!-- Boba Balls -->
+  <circle cx="150" cy="550" r="25" fill="#000000" /> <!-- Large black boba ball -->
+  <circle cx="250" cy="580" r="15" fill="#000000" /> <!-- Medium black boba ball -->
+  <circle cx="350" cy="550" r="25" fill="#000000" /> <!-- Large black boba ball -->
+  <circle cx="450" cy="580" r="15" fill="#000000" /> <!-- Medium black boba ball -->
+  <circle cx="550" cy="550" r="25" fill="#000000" /> <!-- Large black boba ball -->
+  <circle cx="650" cy="580" r="15" fill="#000000" /> <!-- Medium black boba ball -->
+  
+  <circle cx="50" cy="610" r="25" fill="#000000" />
+  <circle cx="70" cy="660" r="15" fill="#000000" />
+  <circle cx="100" cy="590" r="15" fill="#000000" />
+  <circle cx="150" cy="640" r="25" fill="#000000" />
+  <circle cx="200" cy="610" r="15" fill="#000000" />
+  <circle cx="250" cy="650" r="25" fill="#000000" />
+  <circle cx="300" cy="590" r="25" fill="#000000" />
+  <circle cx="600" cy="540" r="15" fill="#000000" />
+  <circle cx="400" cy="610" r="15" fill="#000000" />
+  <circle cx="500" cy="590" r="25" fill="#000000" />
+  <circle cx="560" cy="660" r="25" fill="#000000" />
+  <circle cx="600" cy="610" r="15" fill="#000000" />
+  <circle cx="640" cy="670" r="25" fill="#000000" />
+  <circle cx="700" cy="520" r="25" fill="#000000" />
+  <circle cx="700" cy="610" r="25" fill="#000000" />
+  <circle cx="700" cy="670" r="15" fill="#000000" />
+  <circle cx="730" cy="560" r="15" fill="#000000" />
+  <circle cx="770" cy="620" r="15" fill="#000000" />
+  <circle cx="760" cy="670" r="25" fill="#000000" />
+  <circle cx="760" cy="500" r="15" fill="#000000" />
+</svg>

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: American Typewriter, serif;
+    background-color: #f5f5f5;
+  }
+  
+  .landing{
+    background-image:url(/images/homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .logo{
+    margin-left: 20px;
+    width: 90%;
+    cursor:  pointer;
+  }
+  
+  .options{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .options > *{
+    margin: 10px;
+  }
+  
+  .options > *{
+    margin: 10px;
+  }
+  
+  .options .menu{
+    font-family: American Typewriter, serif;
+    font-weight: normal;
+    cursor:  pointer;
+  }
+
+  .options .menu:hover {
+    color:  rgb(159, 12, 31);
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .chat{
+    right:-1px;
+    position: fixed;
+    font-family: American Typewriter, serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 30px;
+    border-radius: 90px;
+    background-color: rgb(159, 12, 31);
+    color: white;
+    border-style: none;
+    
+  }
+
+  .chat:hover{
+    transform: scale(1.1);
+  }
+  
+  .hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px; /* Adjust this to position your text */
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    
+  }
+  
+  .slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .tea {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tea > *{
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .teaSelections{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  .teaSelections > *{
+    height: 100vh;
+    width: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+
+  .teaSelections > * > h2{
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .teaSelections > * > h2:hover{
+    transform: scale(1.1)
+  }
+  
+  .milk-tea {
+    background-image: url('/images/milk-tea.jpeg');
+    background-size: cover;
+    background-color: black;
+  }
+  
+  .slush-serie {
+    background-image: url('/images/slush-series.jpeg');
+    background-size: cover;
+  }
+  
+  .tea-latte {
+    background-image: url('/images/tea-latte.jpeg');
+    background-size: cover;
+    color: black;
+  }

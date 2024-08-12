@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: American Typewriter, serif;
+  }
+
+.body,html{
+    background-color: rgba(122, 140, 84, 1);
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent, h1 in this case */
+}
+
+.header{
+    position: fixed;
+    margin: 20px;
+    margin-left: 30px;
+    
+}
+
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 180, 124);
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formBox > *{
+    margin-bottom: 20px;
+}
+
+.title{
+    color: rgb(35, 45, 14);
+}
+
+input{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button{
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(35, 45, 14);
+}
+
+button:hover{
+    background-color:  rgb(35, 45, 14);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.swap{
+    color: rgb(35, 45, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swap > p{
+    font-weight:600;
+}
+
+.swap > *{
+    margin-bottom: 5px;
+}
+
+.swapLink:hover{
+    color: white;
+}
