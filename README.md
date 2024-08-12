@@ -4,8 +4,11 @@ Demo: https://boba-chatbox.vercel.app/
 
 ## Team
 Cindy Browning
+
 Janira Gayle
+
 Emely Guerrero
+
 Emily Zhu
 
 ## Getting Started
