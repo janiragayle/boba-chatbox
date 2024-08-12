@@ -1,4 +1,4 @@
-"use clinet";
+"use client";
 
 import "../pages/styles/homepage.css";
 // import InteractiveLink from './components/InteractiveLink'; // Import the Client Component
