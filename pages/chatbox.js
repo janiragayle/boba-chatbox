@@ -100,7 +100,7 @@ export default function Home() {
       }}
     >
       <Box width="100%">
-        <Link href="/homepage" style={{ textDecoration: "none" }}>
+        <Link href="/app/page.js" style={{ textDecoration: "none" }}>
           <Typography
             variant="h4"
             text
