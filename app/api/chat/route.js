@@ -35,15 +35,3 @@ export async function POST(req) {
   })
     return new NextResponse(stream)
 }    
-
-// const openai = new OpenAI({
-    //     baseURL: "https://openrouter.ai/api/v1",
-    //     apiKey: process.env.API_KEY,
-    //   })
-      
-    // const completion = await openai.chat.completions.create({
-    //       model: "meta-llama/llama-3.1-8b-instruct:free",
-    //       messages: [
-    //         { role: "user", content: "Say this is a test" }
-    //       ],
-    //     })
