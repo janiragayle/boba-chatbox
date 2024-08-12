@@ -1,6 +1,7 @@
 "use client";
 
 import { Link, Box, Button, Stack, TextField, Typography } from "@mui/material";
+import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
@@ -13,6 +14,21 @@ export default function Home() {
   ]);
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter()
+
+  const handleLogout = async () => {
+    try {
+      const response = await axios.post('/logout'); 
+      if (response.status === 200) {
+        // Redirect to the homepage after successful logout
+        router.push("/")
+      }
+    } catch (error) {
+      router.push("/")
+      // console.error("Logout failed:", error);
+      //TODO: Fix error!
+    }
+  };
 
   // Send the message to the server
   const sendMessage = async () => {
@@ -115,6 +131,22 @@ export default function Home() {
             Boba Broskis
           </Typography>
         </Link>
+        <Button
+          variant="contained"
+          onClick={handleLogout}
+          sx={{
+            marginRight: 4,
+            borderColor: '#A2B068', 
+            backgroundColor: "#A2B068",
+            color: '#FFFFF',
+            '&:hover': {
+              borderColor: '#B17D6C',
+              backgroundColor: '#CCFFCC',
+            },
+          }}
+        >
+          Logout
+        </Button>
         {/* Add other header elements if needed */}
       </Box>
       <Stack

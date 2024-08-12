@@ -49,6 +49,11 @@ def login():
     else:
         return jsonify({'message': 'Invalid credentials'}), 401
 
+@app.route('/logout', methods=['POST'])
+def logout():
+    session.pop('user_id', None)  # Remove user id from session
+    return jsonify({'message': 'Logout successful!'}), 200
+
 if __name__ == '__main__':
     app.run(debug=True)
     print("Flask app starting...")  # Add this line
