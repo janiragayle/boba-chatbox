@@ -131,7 +131,8 @@ export default function Home() {
             Boba Broskis
           </Typography>
         </Link>
-        <Button
+        
+        {/* <Button
           variant="contained"
           onClick={handleLogout}
           sx={{
@@ -146,7 +147,7 @@ export default function Home() {
           }}
         >
           Logout
-        </Button>
+        </Button> */}
         {/* Add other header elements if needed */}
       </Box>
       <Stack

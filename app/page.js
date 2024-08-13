@@ -27,13 +27,13 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <Link href="/chatbox">
-              <button className="register">Use Our Chatbot!</button>
-            </Link>
+            {/*<Link href="/register">
+              <button className="register">Register/Login To Use Our Chatbot!</button>
+              </Link>*/}
 
-            {/* <Link href="/chatbox">
+             <Link href="/chatbox">
               <button className="chat">Chat with Us</button>
-            </Link> */}
+            </Link>
 
           </div>
         </div>
