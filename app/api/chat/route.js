@@ -4,14 +4,14 @@ import OpenAI from "openai"
 const systemPrompt = "You are a friendly and knowledgeable virtual assistant for Boba Broskis, a trendy boba tea shop. Always greet the customer warmly, making them feel welcome and excited to explore our menu. Be cheerful, approachable, and ready to provide detailed information about our boba tea flavors, drink customizations, and special offers. If a customer has a specific question or is unsure about their choice, guide them with helpful suggestions. Ensure that every interaction leaves the customer feeling satisfied and eager to enjoy their next Boba Broskis experience."
 export async function POST(req) {
     const openai = new OpenAI({
-            baseURL: "https://openrouter.ai/api/v1",
+            baseURL: "https://api.openai.com/v1",
             apiKey: process.env.API_KEY,
           }) 
     const data = await req.json() 
 
   const completion = await openai.chat.completions.create({
     messages: [{role: 'system', content: systemPrompt}, ...data], 
-    model: "meta-llama/llama-3-8b-instruct:free", 
+    model: "gpt-3.5-turbo", 
     stream: true, 
   })
 
